@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Voting POC Challenge
+    </title>
+    <script src='./voting.bundle.js'></script>
+    <style>
+        body,
+        html {
+            height: 100%;
+            margin: 0;
+        }
+
+        .bg {
+            /* The image used */
+            background-image: url("https://cdn.defenseone.com/media/featured/tech_summit_background_2.gif");
+
+            /* Full height */
+            height: 100%;
+            /* Center and scale the image nicely */
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        /* unvisited link */
+        a:link {
+            color: rgb(255, 187, 0);
+        }
+        /* visited link */
+        a:visited {
+            color: rgb(255, 187, 0);
+        }
+        /* mouse over link */
+        a:hover {
+            color: rgb(251, 255, 0);
+        }
+        /* selected link */
+        a:active {
+            color: rgb(255, 140, 140);
+        }
+    </style>
+</head>
+
+<body onload="populateList()">
+    <div class="bg">
+        <br><br><br><br><br>
+        <center>
+            <font color="#CCCCCC" face="arial" size="6px">
+                Select your 
+                <b>Candidate</b> and click on Vote :
+            </font>
+            <br>
+            <br>
+            <br>
+            <select style="height: 50px; width: 320px" id="candidate" required>
+                <option value="-1" default> ------- Select The Candidate You Choose To Vote -------</option>
+            </select>
+            <button type="button" style="margin-left:5px ; height: 80px; width: 100px" onclick="castVote()">VOTE</button>
+            <input type="text" style="margin-left:5px; height: 45px; width: 330px" id="result" disabled>
+        </center>
+    </div>
+    <div style="position:absolute; top:96% ; left:39%">
+        <font face="arial" size="3px" color="#CCCCCC">
+            &copy; Copyright 2019 Developed by 
+            <a href="https://ankurdaharwal.wixsite.com/blockchain" target="_blank">Ankur Daharwal</a>
+    </div>
+    </font>
+</body>
+
+</html>
