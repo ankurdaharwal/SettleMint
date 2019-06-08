@@ -16,8 +16,6 @@ Solidity, Web3, Truffle Voting Challenge by SettleMint
 5. `npm run eth or ganache-cli`
 6. `npm run deploy`
 7. Update Contract Address as displayed on console [here](https://github.com/ankurdaharwal/SettleMint-Voting-Challenge/blob/141f68d803f00e62e6b1a8952d4a16c96b8d552f/src/voting.js#L18)
-
-Example Console output - * *Contract created: 0xc617f232739c6f34787e842ab872a618b33d569b* *
 8. `npm run start`
 
 ## Developed By
